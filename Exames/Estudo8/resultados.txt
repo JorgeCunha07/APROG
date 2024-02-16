@@ -1,0 +1,4 @@
+Joao;13.5
+Tiago;14.0
+Calcitrine;13.0
+Tomas;6.5

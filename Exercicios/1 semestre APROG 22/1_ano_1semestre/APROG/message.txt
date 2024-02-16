@@ -1,0 +1,109 @@
+package pautaturma;
+
+import java.util.Scanner;
+
+public class PautaTurma {
+
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+        Scanner leitura = new Scanner(System.in);
+
+        System.out.println("Gestor de pauta de uma turma!");
+        System.out.println("Quantos alunos tem a turma?");
+        int n = leitura.nextInt();
+
+        String nomes[] = new String[n];
+        int notas[] = new int[n];
+        int opcao = 0;
+        do {
+            System.out.println(" Opção 1 -> Inserir alunos e notas ");
+            System.out.println(" Opção 2 -> Consultar nota do aluno (pauta desordenada) ");
+            System.out.println(" Opção 3 -> Ordenar alfabeticamente ");
+            System.out.println(" Opção 4 -> Ordenar por ordem decrescente de nota ");
+            System.out.println(" Opção 5 -> Consultar nota do aluno (pauta ordenada) ");
+            System.out.println(" Opção 6 -> Consultar pauta ");
+            System.out.println(" Opção 7 -> Sair ");
+
+            opcao = leitura.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    for (int i = 0; i < n; i++) {
+                        
+                        System.out.println("Insira o nome do aluno " + (i + 1) + " :");
+                        leitura.nextLine();
+                        nomes[i] = leitura.nextLine();
+                        System.out.println("Insira também a nota correspondente: ");
+                        notas[i] = leitura.nextInt();
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("");
+                    leitura.nextLine();
+                    System.out.println("Qual o nome do aluno?");
+                    String nome = leitura.next();
+                    for (int i = 0; i < n; i++) {
+                        if (nome.equals(nomes[i])) {
+                            System.out.println("A classificação do aluno é " + notas[i]);
+                        } 
+                    }
+                    break;
+
+                case 3:
+                    String s = "";
+                    int l = 0;
+                    for (int i = 0; i < n; i++) {
+                        for (int j = i + 1; j < n; j++) {
+                            if (nomes[i].compareTo(nomes[j]) > 0) {
+                                s = nomes[i];
+                                l = notas[i];
+                                nomes[i] = nomes[j];
+                                notas[i] = notas[j];
+                                nomes[j] = s;
+                                notas[j] = l;
+                            }
+                        }
+                    }
+                    break;
+                case 4:
+                    int tem = 0;    
+                    String tem1= "";
+                    for (int i = 0; i < notas.length; i++) {     
+                        for (int k = i+1; k < notas.length; k++) {     
+                            if(notas[i] > notas[k]) {    
+                                tem = notas[i];
+                                tem1= nomes[i];
+                                notas[i] = notas[k];
+                                nomes[i]= nomes[k];
+                                notas[k] = tem;
+                                nomes[k] = tem1;
+               }     
+            }     
+        }    
+                    break;
+                case 5:
+                    System.out.println("");
+                    for (int i = 0; i < nomes.length; i++) {
+                        System.out.println("Aluno: " + nomes[i] + "| Classificação: " + notas[i]);
+                        
+                    }
+    
+                    break;
+                case 6:
+                    System.out.println("");
+                    for (int i = 0; i < nomes.length; i++) {
+                        System.out.println("Aluno: " + nomes[i] + "| Classificação: " + notas[i]);
+                        
+                    }
+    
+                    break;
+
+                default:
+                    System.out.println("Fim!");
+
+            }
+        } while (opcao != 7);
+
+        } 
+    }

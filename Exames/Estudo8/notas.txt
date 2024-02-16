@@ -1,0 +1,8 @@
+Joao;Portugues;9
+Joao;Matematica;18
+Tiago;Portugues;16
+Tiago;Ciencias;12
+Calcitrine;Portugues;11
+Tomas;Java;1
+Tomas;Matematica;12
+Calcitrine;Alemao;15

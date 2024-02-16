@@ -1,0 +1,12 @@
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+nome_da_ponte;dia_do_mês;no_de_passagens
+

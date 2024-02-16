@@ -1,0 +1,7 @@
+123456789;José Silva; 2000.00
+193920012;Rúben Santos; 1000.00
+393820214;João Silva; 200.00
+002919288;Vítor Lima; 400.00
+991029301;Rodrigo Pinto; 3000.00
+302019209;Rafael Gonçalves; 2500.00
+001929388;Gonçalo Rocha; 1800.00
